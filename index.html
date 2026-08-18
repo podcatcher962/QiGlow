@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="拾奇 · 灯下奇谭 — 从古籍里拾起被遗忘的奇谭，每个故事照见一种人心。">
-<meta property="og:title" content="拾奇 · 灯下奇谭 | ZhiqiLamp">
+<meta property="og:title" content="拾奇 · 灯下奇谭 | QiGlow">
 <meta property="og:description" content="灯下拾奇谭 · 字里照人心">
 <meta name="theme-color" content="#0a0e19">
-<title>拾奇 · 灯下奇谭 | ZhiqiLamp</title>
+<title>拾奇 · 灯下奇谭 | QiGlow</title>
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <style>
 /* ===== 主题 ===== */
@@ -220,7 +220,7 @@ body[data-fs="2"] .card .vtitle{font-size:34px}
 
 <div class="hdr">
   <h1>拾奇</h1>
-  <div class="en">ZhiqiLamp · Tales from Old Books</div>
+  <div class="en">QiGlow · Tales from Old Books</div>
   <div class="slogan" id="slogan">灯下拾奇谭 · 字里照人心</div>
 </div>
 
@@ -688,7 +688,7 @@ function genHeartCard(){
   ctx.fillStyle='#e8dcbe'; ctx.font='16px "Microsoft YaHei"';
   y=wrapText(ctx,E?h.eword:h.zword,70,y,W-140,28,6);
   ctx.textAlign='center'; ctx.fillStyle='#8f8570'; ctx.font='14px "Microsoft YaHei"';
-  ctx.fillText('拾奇 · 灯下奇谭  ZhiqiLamp',W/2,H-92);
+  ctx.fillText('拾奇 · 灯下奇谭  QiGlow',W/2,H-92);
   ctx.fillText('永远的兰兰 · Lanlan Eternal',W/2,H-62);
   openShareModal(cv.toDataURL('image/png'));
 }
@@ -749,11 +749,11 @@ document.addEventListener('keydown',function(e){
 
 // ===== Modal =====
 const M_USE_ZH='<p><b>拾奇 · 灯下奇谭</b> 是一本会照见你的古籍奇谭册。</p><ul><li><b>灯下翻页</b>——每则奇谭：文言原文 → 白话转译 → 「今人悟」一句。</li><li><b>灯下照见</b>——每则末尾一个问题，六种回答，没有对错，只照见你当下的样子。</li><li><b>今日一谭</b>——每天一盏灯，照同一则奇谭。</li><li><b>收藏</b>——扎心的故事存进「我的收藏」。</li><li><b>分享卡</b>——生成一张灯下奇谭卡，晒给朋友。</li></ul><p>故事来自《搜神记》《搜神后记》《世说新语》《聊斋志异》等古籍，原文保留古味，译文为作者意译。</p>';
-const M_USE_EN='<p><b>ZhiqiLamp · Tales from Old Books</b> — a lamp-lit collection that mirrors your heart.</p><ul><li><b>Turn a page</b> — classical text, plain retelling, then one modern insight.</li><li><b>Mirror</b> — each tale ends with a question and six answers. No right or wrong; it simply shows who you are right now.</li><li><b>Tale of the Day</b> — one lamp, one tale, every day.</li><li><b>Save</b> — keep the tales that cut deep.</li><li><b>Share Card</b> — generate a card and share it.</li></ul><p>Source texts are kept in their original Chinese for flavor; retellings are by the author.</p>';
+const M_USE_EN='<p><b>QiGlow · Tales from Old Books</b> — a lamp-lit collection that mirrors your heart.</p><ul><li><b>Turn a page</b> — classical text, plain retelling, then one modern insight.</li><li><b>Mirror</b> — each tale ends with a question and six answers. No right or wrong; it simply shows who you are right now.</li><li><b>Tale of the Day</b> — one lamp, one tale, every day.</li><li><b>Save</b> — keep the tales that cut deep.</li><li><b>Share Card</b> — generate a card and share it.</li></ul><p>Source texts are kept in their original Chinese for flavor; retellings are by the author.</p>';
 const M_DISC_ZH='<ul><li>本页为个人文化创作，故事出自古籍，非学术整理，解读与「今人悟」「灯下照见」均为作者个人体悟。</li><li>「灯下照见」不构成任何心理、法律、投资或生活建议；选择无对错，仅供自省。</li><li>古籍原文多为公共领域；白话译文与页面设计版权归作者所有。</li><li>使用本页产生的一切判断与决定，均由使用者自行负责。</li><li>本页不收集、不存储任何个人信息；第三方统计仅计页面访问次数。</li><li>内容仅为文化分享，请勿将其用于迷信活动。</li><li>如内容有误或有异议，欢迎通过 GitHub 联系作者。</li></ul>';
 const M_DISC_EN='<ul><li>This page is a personal cultural work; retellings and insights are the author\'s own readings of classical Chinese tales.</li><li>The Mirror questions are not psychological, legal, financial or life advice; choices are never right or wrong.</li><li>Classical texts are mostly public domain; translations and design belong to the author.</li><li>Any judgment or decision made after using this page is the user\'s own responsibility.</li><li>This page collects no personal data; the only third-party counter records page views.</li><li>Content is for cultural sharing only; please do not use it for superstition.</li><li>Corrections and feedback are welcome via GitHub.</li></ul>';
-const M_ABOUT_ZH='<p><b>拾奇 · 灯下奇谭</b>（ZhiqiLamp）——从古籍里拾起被遗忘的奇谭，每个故事照见一种人心。</p><p>作者：<b>永远的兰兰</b>（Lanlan Eternal）</p><p>GitHub：<a href="https://github.com/podcatcher962" target="_blank" rel="noopener" style="color:var(--gold)">github.com/podcatcher962</a></p><p>姊妹篇：<a href="https://podcatcher962.github.io/JianMirror/" target="_blank" rel="noopener" style="color:var(--gold)">见素 · 西游镜鉴录</a> —— 以《西游记》为镜，照见你本来的样子。</p><p>更多软件见 <a href="https://podcatcher962.github.io/" target="_blank" rel="noopener" style="color:var(--gold)">兰斋丛编</a>。</p>';
-const M_ABOUT_EN='<p><b>ZhiqiLamp · Tales from Old Books</b> — forgotten tales from ancient books, each one a mirror for a human heart.</p><p>Author: <b>Lanlan Eternal</b></p><p>GitHub: <a href="https://github.com/podcatcher962" target="_blank" rel="noopener" style="color:var(--gold)">github.com/podcatcher962</a></p><p>Sister work: <a href="https://podcatcher962.github.io/JianMirror/" target="_blank" rel="noopener" style="color:var(--gold)">JianMirror</a> — the Journey to the West mirror, see your true self.</p><p>More software: <a href="https://podcatcher962.github.io/" target="_blank" rel="noopener" style="color:var(--gold)">Lanzhai</a>.</p>';
+const M_ABOUT_ZH='<p><b>拾奇 · 灯下奇谭</b>（QiGlow）——从古籍里拾起被遗忘的奇谭，每个故事照见一种人心。</p><p>作者：<b>永远的兰兰</b>（Lanlan Eternal）</p><p>GitHub：<a href="https://github.com/podcatcher962" target="_blank" rel="noopener" style="color:var(--gold)">github.com/podcatcher962</a></p><p>姊妹篇：<a href="https://podcatcher962.github.io/JianMirror/" target="_blank" rel="noopener" style="color:var(--gold)">见素 · 西游镜鉴录</a> —— 以《西游记》为镜，照见你本来的样子。</p><p>更多软件见 <a href="https://podcatcher962.github.io/" target="_blank" rel="noopener" style="color:var(--gold)">兰斋丛编</a>。</p>';
+const M_ABOUT_EN='<p><b>QiGlow · Tales from Old Books</b> — forgotten tales from ancient books, each one a mirror for a human heart.</p><p>Author: <b>Lanlan Eternal</b></p><p>GitHub: <a href="https://github.com/podcatcher962" target="_blank" rel="noopener" style="color:var(--gold)">github.com/podcatcher962</a></p><p>Sister work: <a href="https://podcatcher962.github.io/JianMirror/" target="_blank" rel="noopener" style="color:var(--gold)">JianMirror</a> — the Journey to the West mirror, see your true self.</p><p>More software: <a href="https://podcatcher962.github.io/" target="_blank" rel="noopener" style="color:var(--gold)">Lanzhai</a>.</p>';
 function openModal(k){
   const box=document.getElementById('modalBox');
   let title='', body='';
@@ -793,7 +793,7 @@ function genShare(){
   ctx.fillStyle='#7a5c1e'; ctx.font='bold 34px "Microsoft YaHei","KaiTi",serif';
   ctx.fillText('拾奇 · 灯下奇谭',W/2,90);
   ctx.fillStyle='#8a6a35'; ctx.font='13px "Courier New",monospace';
-  ctx.fillText('ZHIQILAMP · TALES FROM OLD BOOKS',W/2,120);
+  ctx.fillText('QIGLOW · TALES FROM OLD BOOKS',W/2,120);
   // 插图（如有）
   if(d.img){
     const img=new Image();
