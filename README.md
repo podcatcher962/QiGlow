@@ -1,4 +1,4 @@
-# 拾奇 · 灯下奇谭 ZhiqiLamp
+# 拾奇 · 灯下奇谭 QiGlow
 
 [中文](#中文) | [English](#english)
 
@@ -8,7 +8,7 @@
 
 ### 这是什么
 
-**拾奇 · 灯下奇谭**（ZhiqiLamp）——一本会照见你的古籍奇谭册。
+**拾奇 · 灯下奇谭**（QiGlow）——一本会照见你的古籍奇谭册。
 
 从《搜神记》《搜神后记》《世说新语》《聊斋志异》《太平广记》《山海经》等古籍中拾起被遗忘的奇谭，每个故事照见一种人心：
 
@@ -58,7 +58,7 @@
 
 姊妹篇：[见素 · 西游镜鉴录](https://podcatcher962.github.io/JianMirror/) · 更多软件见 [兰斋丛编](https://podcatcher962.github.io/)
 
-**在线版**：https://podcatcher962.github.io/ZhiqiLamp/
+**在线版**：https://podcatcher962.github.io/QiGlow/
 
 ---
 
@@ -66,7 +66,7 @@
 
 ### What Is This
 
-**ZhiqiLamp · Tales from Old Books** — a lamp-lit collection of forgotten classical tales that mirrors your heart.
+**QiGlow · Tales from Old Books** — a lamp-lit collection of forgotten classical tales that mirrors your heart.
 
 Drawn from the *Soushen Ji*, *Soushen Houji*, *Shishuo Xinyu*, *Liaozhai Zhiyi*, *Taiping Guangji*, *Shan Hai Jing* and other ancient Chinese books:
 
@@ -116,4 +116,4 @@ Lanlan Eternal · [GitHub](https://github.com/podcatcher962)
 
 Sister work: [JianMirror](https://podcatcher962.github.io/JianMirror/) · More software: [Lanzhai](https://podcatcher962.github.io/)
 
-**Live version**: https://podcatcher962.github.io/ZhiqiLamp/
+**Live version**: https://podcatcher962.github.io/QiGlow/
