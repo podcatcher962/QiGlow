@@ -82,9 +82,10 @@ html[data-theme="light"] .card{box-shadow:0 8px 26px rgba(90,70,40,.18)}
 .card::after{content:"";position:absolute;inset:6px;border:1px solid rgba(140,110,70,.28);pointer-events:none;border-radius:1px}
 .card .src{font-size:13px;color:#8a7a58;letter-spacing:3px;margin-bottom:14px;text-align:center}
 .card .vtitle{font-family:'FangSong','STFangsong','KaiTi',serif;font-size:31px;color:#5a4a30;letter-spacing:8px;text-align:center;margin-bottom:18px;font-weight:bold}
-.tale-img{width:100%;height:150px;border:1px dashed #c9b285;border-radius:3px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;background:rgba(140,110,70,.06);position:relative;overflow:hidden}
+.tale-img{width:100%;height:320px;border:1px dashed #c9b285;border-radius:3px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;background:rgba(140,110,70,.06);position:relative;overflow:hidden}
 .tale-img.has{border-style:solid;padding:0;background:#e8d9b8}
-.tale-img img{width:100%;height:100%;object-fit:cover;display:block}
+.tale-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s ease}
+.tale-img.has:hover img{transform:scale(1.03)}
 .img-ph{font-size:15px;color:#a09070;letter-spacing:5px;font-family:'KaiTi',serif}
 .card .orig{font-size:16px;color:#6b5c42;line-height:2.1;letter-spacing:1px;text-align:justify;border-left:3px solid #c9b285;padding:2px 0 2px 14px;margin-bottom:16px;font-family:'FangSong','STFangsong',serif}
 .card .white{font-size:17px;color:#3a2e22;line-height:2.05;letter-spacing:.6px;text-align:justify}
