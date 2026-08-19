@@ -28,9 +28,17 @@ body{
 }
 .wrap{max-width:560px;width:100%}
 
-/* ===== 开屏 · 灯下夜谭（AI 海报） ===== */
-#splash{position:fixed;inset:0;z-index:300;background:#0d1220 url('generated-images/qiglow_splash.jpg') center/contain no-repeat;display:flex;flex-direction:column;align-items:center;justify-content:center;animation:splashFade 9s ease forwards;overflow:hidden}
+/* ===== 开屏 · 灯下夜谭（暖黄宫灯） ===== */
+#splash{position:fixed;inset:0;z-index:300;background:linear-gradient(180deg,#070a14,#0b1120 55%,#0a0e19);display:flex;flex-direction:column;align-items:center;justify-content:center;animation:splashFade 9s ease forwards;overflow:hidden}
 @keyframes splashFade{0%{opacity:0}8%{opacity:1}72%{opacity:1}100%{opacity:0;visibility:hidden}}
+.hills{position:absolute;bottom:0;left:0;right:0;opacity:.5}
+.hills svg{display:block;width:100%;height:auto}
+/* 灯与光（暖黄宫灯，避开蜡烛意象） */
+.lamp-wrap{position:relative;width:230px;height:250px;display:flex;align-items:center;justify-content:center}
+.lamp-glow{position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(255,190,95,.32) 0%,rgba(255,170,60,.12) 38%,transparent 66%);animation:glowBreathe 3.2s ease-in-out infinite}
+@keyframes glowBreathe{0%,100%{opacity:.8;transform:scale(1)}50%{opacity:1;transform:scale(1.04)}}
+.lantern{position:relative;z-index:2;width:120px;height:178px;animation:lanternSway 5s ease-in-out infinite;transform-origin:50% -40px}
+@keyframes lanternSway{0%,100%{transform:rotate(-2.2deg)}50%{transform:rotate(2.2deg)}}
 .l-cap{position:absolute;top:0;left:50%;transform:translateX(-50%);width:98px;height:22px;background:linear-gradient(180deg,#8a6a35,#6b4f25);border-radius:6px 6px 3px 3px}
 .l-cap::after{content:"";position:absolute;top:-8px;left:50%;transform:translateX(-50%);width:34px;height:9px;background:#a5823f;border-radius:3px 3px 0 0}
 .l-body{position:absolute;top:22px;left:50%;transform:translateX(-50%);width:94px;height:106px;background:radial-gradient(circle at 50% 60%,#fff0cc 0%,#ffd38a 45%,#f2a03c 85%,#c97a2a 100%);border-radius:47px;box-shadow:0 0 42px rgba(255,190,95,.55),inset 0 0 18px rgba(255,255,255,.4);overflow:hidden}
@@ -167,11 +175,31 @@ body[data-fs="2"] .card .vtitle{font-size:34px}
 </head>
 <body>
 
-<!-- 开屏（AI 灯下夜谭海报 + 题字） -->
+<!-- 开屏 · 灯下夜谭（暖黄宫灯 + 书卷 + 远山） -->
 <div id="splash">
+  <div class="lamp-wrap">
+    <div class="lamp-glow"></div>
+    <div class="lantern">
+      <div class="l-cap"></div>
+      <div class="l-body">
+        <div class="l-rib" style="left:26%"></div>
+        <div class="l-rib" style="left:50%"></div>
+        <div class="l-rib" style="left:74%"></div>
+      </div>
+      <div class="l-base"></div>
+      <div class="l-tassel"></div>
+    </div>
+  </div>
+  <div class="scroll"></div>
   <div class="s-title">拾奇</div>
   <div class="s-sub">灯 下 奇 谭</div>
   <div class="s-sign">永远的兰兰 · Lanlan Eternal</div>
+  <div class="hills">
+    <svg viewBox="0 0 800 180" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,180 L0,120 Q90,60 190,110 T390,100 T590,120 T800,95 L800,180 Z" fill="#111a30" opacity=".85"/>
+      <path d="M0,180 L0,140 Q120,90 240,135 T480,120 T720,140 L800,125 L800,180 Z" fill="#0e1628" opacity=".95"/>
+    </svg>
+  </div>
 </div>
 
 <audio id="bgm" loop src="audio/guqin.mp3"></audio>
